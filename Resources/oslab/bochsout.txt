@@ -1,0 +1,600 @@
+00000000000i[     ] Bochs x86 Emulator 2.3.7
+00000000000i[     ]   Build from CVS snapshot, on June 3, 2008
+00000000000i[     ] System configuration
+00000000000i[     ]   processors: 1 (cores=1, HT threads=1)
+00000000000i[     ]   A20 line support: yes
+00000000000i[     ]   APIC support: no
+00000000000i[     ] CPU configuration
+00000000000i[     ]   level: 5
+00000000000i[     ]   SMP support: no
+00000000000i[     ]   FPU support: yes
+00000000000i[     ]   MMX support: yes
+00000000000i[     ]   SSE support: no
+00000000000i[     ]   CLFLUSH support: no
+00000000000i[     ]   VME support: yes
+00000000000i[     ]   3dnow! support: no
+00000000000i[     ]   PAE support: no
+00000000000i[     ]   PGE support: no
+00000000000i[     ]   PSE support: yes
+00000000000i[     ]   x86-64 support: no
+00000000000i[     ]   SEP support: no
+00000000000i[     ]   MWAIT support: no
+00000000000i[     ]   XSAVE support: no
+00000000000i[     ]   AES support: no
+00000000000i[     ] Optimization configuration
+00000000000i[     ]   Guest2HostTLB support: no
+00000000000i[     ]   RepeatSpeedups support: no
+00000000000i[     ]   Icache support: no
+00000000000i[     ]   Trace cache support: no
+00000000000i[     ]   Fast function calls: no
+00000000000i[     ] Devices configuration
+00000000000i[     ]   ACPI support: no
+00000000000i[     ]   NE2000 support: no
+00000000000i[     ]   PCI support: no
+00000000000i[     ]   SB16 support: no
+00000000000i[     ]   USB support: no
+00000000000i[     ]   VGA extension support: vbe 
+00000000000i[MEM0 ] allocated memory at 0xf63fb010. after alignment, vector=0xf63fc000
+00000000000i[MEM0 ] 16.00MB
+00000000000i[MEM0 ] rom at 0xfffe0000/131072 ('./bochs/BIOS-bochs-latest')
+00000000000i[MEM0 ] rom at 0xc0000/39424 ('./bochs/vgabios.bin')
+00000000000i[CMOS ] Using local time for initial clock
+00000000000i[CMOS ] Setting initial clock to: Fri Jul 14 00:24:51 2023 (time0=1689319491)
+00000000000i[DMA  ] channel 4 used by cascade
+00000000000i[DMA  ] channel 2 used by Floppy Drive
+00000000000i[FDD  ] fd0: './linux-0.11/Image' ro=0, h=2,t=80,spt=18
+00000000000i[MEM0 ] Register memory access handlers: 0x000a0000 - 0x000bffff
+00000000000i[XGUI ] test_alloc_colors: 16 colors available out of 16 colors tried
+00000000000i[XGUI ] font 8 wide x 16 high, display depth = 24
+00000000000i[VGA  ] interval=300000
+00000000000i[MEM0 ] Register memory access handlers: 0xe0000000 - 0xe07fffff
+00000000000i[VGA  ] VBE Bochs Display Extension Enabled
+00000000000i[     ] init_mem of 'harddrv' plugin device by virtual method
+00000000000i[     ] init_mem of 'keyboard' plugin device by virtual method
+00000000000i[     ] init_mem of 'serial' plugin device by virtual method
+00000000000i[     ] init_mem of 'parallel' plugin device by virtual method
+00000000000i[     ] init_mem of 'extfpuirq' plugin device by virtual method
+00000000000i[     ] init_mem of 'speaker' plugin device by virtual method
+00000000000i[     ] init_dev of 'harddrv' plugin device by virtual method
+00000000000i[HD   ] HD on ata0-0: './hdc-0.11.img' 'flat' mode 
+00000000000i[HD   ] translation on ata0-0 set to 'none'
+00000000000i[HD   ] Using boot sequence floppy, none, none
+00000000000i[HD   ] Floppy boot signature check is enabled
+00000000000i[     ] init_dev of 'keyboard' plugin device by virtual method
+00000000000i[KBD  ] will paste characters every 1000 keyboard ticks
+00000000000i[     ] init_dev of 'serial' plugin device by virtual method
+00000000000i[SER  ] com1 at 0x03f8 irq 4
+00000000000i[     ] init_dev of 'parallel' plugin device by virtual method
+00000000000i[PAR  ] parallel port 1 at 0x0378 irq 7
+00000000000i[     ] init_dev of 'extfpuirq' plugin device by virtual method
+00000000000i[     ] init_dev of 'speaker' plugin device by virtual method
+00000000000i[SPEAK] Failed to open /dev/console: 资源暂时不可用
+00000000000i[SPEAK] Deactivating beep on console
+00000000000i[     ] register state of 'harddrv' plugin device by virtual method
+00000000000i[     ] register state of 'keyboard' plugin device by virtual method
+00000000000i[     ] register state of 'serial' plugin device by virtual method
+00000000000i[     ] register state of 'parallel' plugin device by virtual method
+00000000000i[     ] register state of 'extfpuirq' plugin device by virtual method
+00000000000i[     ] register state of 'speaker' plugin device by virtual method
+00000000000i[SYS  ] bx_pc_system_c::Reset(HARDWARE) called
+00000000000i[CPU  ] cpu hardware reset
+00000000000i[     ] reset of 'harddrv' plugin device by virtual method
+00000000000i[     ] reset of 'keyboard' plugin device by virtual method
+00000000000i[     ] reset of 'serial' plugin device by virtual method
+00000000000i[     ] reset of 'parallel' plugin device by virtual method
+00000000000i[     ] reset of 'extfpuirq' plugin device by virtual method
+00000000000i[     ] reset of 'speaker' plugin device by virtual method
+00000000000i[XGUI ] [x] Mouse off
+00000003445i[BIOS ] $Revision: 1.194 $ $Date: 2007/12/23 19:46:27 $
+00000340863i[KBD  ] reset-disable command received
+00000359607i[BIOS ] Starting rombios32
+00000360303i[BIOS ] ram_size=0x00f00000
+00000360817i[BIOS ] Found 1 cpu(s)
+00000585315i[VBIOS] VGABios $Id: vgabios.c,v 1.66 2006/07/10 07:47:51 vruppert Exp $
+00000585386i[VGA  ] VBE known Display Interface b0c0
+00000585418i[VGA  ] VBE known Display Interface b0c4
+00000588343i[VBIOS] VBE Bios $Id: vbe.c,v 1.58 2006/08/19 09:39:43 vruppert Exp $
+00000911784i[BIOS ] ata0-0: PCHS=204/16/38 translation=none LCHS=204/16/38
+00001200000i[XGUI ] charmap update. Font Height is 16
+00004791969i[BIOS ] IDE time out
+00004990832i[BIOS ] Booting from 0000:7c00
+00015861740i[FDD  ] partial read() on floppy image returns 193/512
+00015906695i[FDD  ] read() on floppy image returns 0
+00015951650i[FDD  ] read() on floppy image returns 0
+00015996605i[FDD  ] read() on floppy image returns 0
+00016041560i[FDD  ] read() on floppy image returns 0
+00016086515i[FDD  ] read() on floppy image returns 0
+00016131470i[FDD  ] read() on floppy image returns 0
+00016176425i[FDD  ] read() on floppy image returns 0
+00016221380i[FDD  ] read() on floppy image returns 0
+00016266335i[FDD  ] read() on floppy image returns 0
+00016312535i[FDD  ] read() on floppy image returns 0
+00016357490i[FDD  ] read() on floppy image returns 0
+00016402445i[FDD  ] read() on floppy image returns 0
+00016447400i[FDD  ] read() on floppy image returns 0
+00016492355i[FDD  ] read() on floppy image returns 0
+00016537310i[FDD  ] read() on floppy image returns 0
+00016582265i[FDD  ] read() on floppy image returns 0
+00016627220i[FDD  ] read() on floppy image returns 0
+00016672175i[FDD  ] read() on floppy image returns 0
+00016718363i[FDD  ] read() on floppy image returns 0
+00016763318i[FDD  ] read() on floppy image returns 0
+00016808273i[FDD  ] read() on floppy image returns 0
+00016853228i[FDD  ] read() on floppy image returns 0
+00016898183i[FDD  ] read() on floppy image returns 0
+00016943138i[FDD  ] read() on floppy image returns 0
+00016988093i[FDD  ] read() on floppy image returns 0
+00017033048i[FDD  ] read() on floppy image returns 0
+00017078003i[FDD  ] read() on floppy image returns 0
+00017124210i[FDD  ] read() on floppy image returns 0
+00017169165i[FDD  ] read() on floppy image returns 0
+00017214120i[FDD  ] read() on floppy image returns 0
+00017259075i[FDD  ] read() on floppy image returns 0
+00017304030i[FDD  ] read() on floppy image returns 0
+00017348985i[FDD  ] read() on floppy image returns 0
+00017393940i[FDD  ] read() on floppy image returns 0
+00017438895i[FDD  ] read() on floppy image returns 0
+00017483850i[FDD  ] read() on floppy image returns 0
+00017528805i[FDD  ] read() on floppy image returns 0
+00017573760i[FDD  ] read() on floppy image returns 0
+00017618715i[FDD  ] read() on floppy image returns 0
+00017663670i[FDD  ] read() on floppy image returns 0
+00017708625i[FDD  ] read() on floppy image returns 0
+00017753580i[FDD  ] read() on floppy image returns 0
+00017798535i[FDD  ] read() on floppy image returns 0
+00017843490i[FDD  ] read() on floppy image returns 0
+00017888445i[FDD  ] read() on floppy image returns 0
+00017934641i[FDD  ] read() on floppy image returns 0
+00017979596i[FDD  ] read() on floppy image returns 0
+00018024551i[FDD  ] read() on floppy image returns 0
+00018069506i[FDD  ] read() on floppy image returns 0
+00018114461i[FDD  ] read() on floppy image returns 0
+00018159416i[FDD  ] read() on floppy image returns 0
+00018204371i[FDD  ] read() on floppy image returns 0
+00018249326i[FDD  ] read() on floppy image returns 0
+00018294281i[FDD  ] read() on floppy image returns 0
+00018339236i[FDD  ] read() on floppy image returns 0
+00018384191i[FDD  ] read() on floppy image returns 0
+00018429146i[FDD  ] read() on floppy image returns 0
+00018474101i[FDD  ] read() on floppy image returns 0
+00018519056i[FDD  ] read() on floppy image returns 0
+00018564011i[FDD  ] read() on floppy image returns 0
+00018608966i[FDD  ] read() on floppy image returns 0
+00018653921i[FDD  ] read() on floppy image returns 0
+00018698876i[FDD  ] read() on floppy image returns 0
+00018745071i[FDD  ] read() on floppy image returns 0
+00018790026i[FDD  ] read() on floppy image returns 0
+00018834981i[FDD  ] read() on floppy image returns 0
+00018879936i[FDD  ] read() on floppy image returns 0
+00018924891i[FDD  ] read() on floppy image returns 0
+00018969846i[FDD  ] read() on floppy image returns 0
+00019014801i[FDD  ] read() on floppy image returns 0
+00019059756i[FDD  ] read() on floppy image returns 0
+00019104711i[FDD  ] read() on floppy image returns 0
+00019149666i[FDD  ] read() on floppy image returns 0
+00019194621i[FDD  ] read() on floppy image returns 0
+00019239576i[FDD  ] read() on floppy image returns 0
+00019284531i[FDD  ] read() on floppy image returns 0
+00019329486i[FDD  ] read() on floppy image returns 0
+00019374441i[FDD  ] read() on floppy image returns 0
+00019419396i[FDD  ] read() on floppy image returns 0
+00019464351i[FDD  ] read() on floppy image returns 0
+00019509306i[FDD  ] read() on floppy image returns 0
+00019555521i[FDD  ] read() on floppy image returns 0
+00019600476i[FDD  ] read() on floppy image returns 0
+00019645431i[FDD  ] read() on floppy image returns 0
+00019690386i[FDD  ] read() on floppy image returns 0
+00019735341i[FDD  ] read() on floppy image returns 0
+00019780296i[FDD  ] read() on floppy image returns 0
+00019825251i[FDD  ] read() on floppy image returns 0
+00019870206i[FDD  ] read() on floppy image returns 0
+00019915161i[FDD  ] read() on floppy image returns 0
+00019960116i[FDD  ] read() on floppy image returns 0
+00020005071i[FDD  ] read() on floppy image returns 0
+00020050026i[FDD  ] read() on floppy image returns 0
+00020094981i[FDD  ] read() on floppy image returns 0
+00020139936i[FDD  ] read() on floppy image returns 0
+00020184891i[FDD  ] read() on floppy image returns 0
+00020229846i[FDD  ] read() on floppy image returns 0
+00020274801i[FDD  ] read() on floppy image returns 0
+00020319756i[FDD  ] read() on floppy image returns 0
+00020365951i[FDD  ] read() on floppy image returns 0
+00020410906i[FDD  ] read() on floppy image returns 0
+00020455861i[FDD  ] read() on floppy image returns 0
+00020500816i[FDD  ] read() on floppy image returns 0
+00020545771i[FDD  ] read() on floppy image returns 0
+00020590726i[FDD  ] read() on floppy image returns 0
+00020635681i[FDD  ] read() on floppy image returns 0
+00020680636i[FDD  ] read() on floppy image returns 0
+00020725591i[FDD  ] read() on floppy image returns 0
+00020770546i[FDD  ] read() on floppy image returns 0
+00020815501i[FDD  ] read() on floppy image returns 0
+00020860456i[FDD  ] read() on floppy image returns 0
+00020905411i[FDD  ] read() on floppy image returns 0
+00020950366i[FDD  ] read() on floppy image returns 0
+00020995321i[FDD  ] read() on floppy image returns 0
+00021040276i[FDD  ] read() on floppy image returns 0
+00021085231i[FDD  ] read() on floppy image returns 0
+00021130186i[FDD  ] read() on floppy image returns 0
+00021176382i[FDD  ] read() on floppy image returns 0
+00021221337i[FDD  ] read() on floppy image returns 0
+00021266292i[FDD  ] read() on floppy image returns 0
+00021311247i[FDD  ] read() on floppy image returns 0
+00021356202i[FDD  ] read() on floppy image returns 0
+00021401157i[FDD  ] read() on floppy image returns 0
+00021446112i[FDD  ] read() on floppy image returns 0
+00021491067i[FDD  ] read() on floppy image returns 0
+00021536024i[FDD  ] read() on floppy image returns 0
+00021580979i[FDD  ] read() on floppy image returns 0
+00021625934i[FDD  ] read() on floppy image returns 0
+00021670889i[FDD  ] read() on floppy image returns 0
+00021715844i[FDD  ] read() on floppy image returns 0
+00021760799i[FDD  ] read() on floppy image returns 0
+00021805754i[FDD  ] read() on floppy image returns 0
+00021850709i[FDD  ] read() on floppy image returns 0
+00021895664i[FDD  ] read() on floppy image returns 0
+00021940619i[FDD  ] read() on floppy image returns 0
+00021986816i[FDD  ] read() on floppy image returns 0
+00022031771i[FDD  ] read() on floppy image returns 0
+00022076726i[FDD  ] read() on floppy image returns 0
+00022121681i[FDD  ] read() on floppy image returns 0
+00022166636i[FDD  ] read() on floppy image returns 0
+00022211591i[FDD  ] read() on floppy image returns 0
+00022256546i[FDD  ] read() on floppy image returns 0
+00022301501i[FDD  ] read() on floppy image returns 0
+00022346456i[FDD  ] read() on floppy image returns 0
+00022391411i[FDD  ] read() on floppy image returns 0
+00022436366i[FDD  ] read() on floppy image returns 0
+00022486810i[BIOS ] int13_harddisk: function 15, unmapped device for ELDL=81
+00076834371i[XGUI ] X11 Beep ON (frequency=inf)
+00077284368i[XGUI ] X11 Beep OFF
+00077284368i[PIT81] Changing GATE 2 to: 0
+01040108590i[XGUI ] X11 Beep ON (frequency=749.96)
+01040108590i[PIT81] Changing GATE 2 to: 1
+01040579703i[XGUI ] X11 Beep OFF
+01040579703i[PIT81] Changing GATE 2 to: 0
+02774609871i[XGUI ] X11 Beep ON (frequency=749.96)
+02774609871i[PIT81] Changing GATE 2 to: 1
+02775087324i[XGUI ] X11 Beep OFF
+02775087324i[PIT81] Changing GATE 2 to: 0
+02776745667i[XGUI ] X11 Beep ON (frequency=749.96)
+02776745667i[PIT81] Changing GATE 2 to: 1
+02777207360i[XGUI ] X11 Beep OFF
+02777207360i[PIT81] Changing GATE 2 to: 0
+02778701598i[XGUI ] X11 Beep ON (frequency=749.96)
+02778701598i[PIT81] Changing GATE 2 to: 1
+02779167387i[XGUI ] X11 Beep OFF
+02779167387i[PIT81] Changing GATE 2 to: 0
+02798546204i[XGUI ] X11 Beep ON (frequency=749.96)
+02798546204i[PIT81] Changing GATE 2 to: 1
+02799007705i[XGUI ] X11 Beep OFF
+02799007705i[PIT81] Changing GATE 2 to: 0
+02800918034i[XGUI ] X11 Beep ON (frequency=749.96)
+02800918034i[PIT81] Changing GATE 2 to: 1
+02801367743i[XGUI ] X11 Beep OFF
+02801367743i[PIT81] Changing GATE 2 to: 0
+02803113580i[XGUI ] X11 Beep ON (frequency=749.96)
+02803113580i[PIT81] Changing GATE 2 to: 1
+02803567781i[XGUI ] X11 Beep OFF
+02803567781i[PIT81] Changing GATE 2 to: 0
+02805525706i[XGUI ] X11 Beep ON (frequency=749.96)
+02805525706i[PIT81] Changing GATE 2 to: 1
+02805967815i[XGUI ] X11 Beep OFF
+02805967815i[PIT81] Changing GATE 2 to: 0
+02863246258i[XGUI ] X11 Beep ON (frequency=749.96)
+02863246258i[PIT81] Changing GATE 2 to: 1
+02863688735i[XGUI ] X11 Beep OFF
+02863688735i[PIT81] Changing GATE 2 to: 0
+02865537574i[XGUI ] X11 Beep ON (frequency=749.96)
+02865537574i[PIT81] Changing GATE 2 to: 1
+02866008771i[XGUI ] X11 Beep OFF
+02866008771i[PIT81] Changing GATE 2 to: 0
+02867377659i[XGUI ] X11 Beep ON (frequency=749.96)
+02867377659i[PIT81] Changing GATE 2 to: 1
+02867848800i[XGUI ] X11 Beep OFF
+02867848800i[PIT81] Changing GATE 2 to: 0
+02869034238i[XGUI ] X11 Beep ON (frequency=749.96)
+02869034238i[PIT81] Changing GATE 2 to: 1
+02869488827i[XGUI ] X11 Beep OFF
+02869488827i[PIT81] Changing GATE 2 to: 0
+02880037787i[XGUI ] X11 Beep ON (frequency=749.96)
+02880037787i[PIT81] Changing GATE 2 to: 1
+02880489004i[XGUI ] X11 Beep OFF
+02880489004i[PIT81] Changing GATE 2 to: 0
+02882041930i[XGUI ] X11 Beep ON (frequency=749.96)
+02882041930i[PIT81] Changing GATE 2 to: 1
+02882489035i[XGUI ] X11 Beep OFF
+02882489035i[PIT81] Changing GATE 2 to: 0
+02894078050i[XGUI ] X11 Beep ON (frequency=749.96)
+02894078050i[PIT81] Changing GATE 2 to: 1
+02894529227i[XGUI ] X11 Beep OFF
+02894529227i[PIT81] Changing GATE 2 to: 0
+02898053906i[XGUI ] X11 Beep ON (frequency=749.96)
+02898053906i[PIT81] Changing GATE 2 to: 1
+02898529291i[XGUI ] X11 Beep OFF
+02898529291i[PIT81] Changing GATE 2 to: 0
+02903105747i[XGUI ] X11 Beep ON (frequency=749.96)
+02903105747i[PIT81] Changing GATE 2 to: 1
+02903569372i[XGUI ] X11 Beep OFF
+02903569372i[PIT81] Changing GATE 2 to: 0
+02906457692i[XGUI ] X11 Beep ON (frequency=749.96)
+02906457692i[PIT81] Changing GATE 2 to: 1
+02906929425i[XGUI ] X11 Beep OFF
+02906929425i[PIT81] Changing GATE 2 to: 0
+02944166128i[XGUI ] X11 Beep ON (frequency=749.96)
+02944166128i[PIT81] Changing GATE 2 to: 1
+02944610025i[XGUI ] X11 Beep OFF
+02944610025i[PIT81] Changing GATE 2 to: 0
+03103466218i[XGUI ] X11 Beep ON (frequency=749.96)
+03103466218i[PIT81] Changing GATE 2 to: 1
+03103932559i[XGUI ] X11 Beep OFF
+03103932559i[PIT81] Changing GATE 2 to: 0
+03105549968i[XGUI ] X11 Beep ON (frequency=749.96)
+03105549968i[PIT81] Changing GATE 2 to: 1
+03106012597i[XGUI ] X11 Beep OFF
+03106012597i[PIT81] Changing GATE 2 to: 0
+03159648300i[XGUI ] X11 Beep ON (frequency=749.96)
+03159648300i[PIT81] Changing GATE 2 to: 1
+03160093457i[XGUI ] X11 Beep OFF
+03160093457i[PIT81] Changing GATE 2 to: 0
+03207409748i[XGUI ] X11 Beep ON (frequency=749.96)
+03207409748i[PIT81] Changing GATE 2 to: 1
+03207854217i[XGUI ] X11 Beep OFF
+03207854217i[PIT81] Changing GATE 2 to: 0
+03209578068i[XGUI ] X11 Beep ON (frequency=749.96)
+03209578068i[PIT81] Changing GATE 2 to: 1
+03210054253i[XGUI ] X11 Beep OFF
+03210054253i[PIT81] Changing GATE 2 to: 0
+03211301612i[XGUI ] X11 Beep ON (frequency=749.96)
+03211301612i[PIT81] Changing GATE 2 to: 1
+03211774281i[XGUI ] X11 Beep OFF
+03211774281i[PIT81] Changing GATE 2 to: 0
+03212933738i[XGUI ] X11 Beep ON (frequency=749.96)
+03212933738i[PIT81] Changing GATE 2 to: 1
+03213374303i[XGUI ] X11 Beep OFF
+03213374303i[PIT81] Changing GATE 2 to: 0
+03214858122i[XGUI ] X11 Beep ON (frequency=749.96)
+03214858122i[PIT81] Changing GATE 2 to: 1
+03215334335i[XGUI ] X11 Beep OFF
+03215334335i[PIT81] Changing GATE 2 to: 0
+03224561583i[XGUI ] X11 Beep ON (frequency=749.96)
+03224561583i[PIT81] Changing GATE 2 to: 1
+03225014488i[XGUI ] X11 Beep OFF
+03225014488i[PIT81] Changing GATE 2 to: 0
+03226485900i[XGUI ] X11 Beep ON (frequency=749.96)
+03226485900i[PIT81] Changing GATE 2 to: 1
+03226934521i[XGUI ] X11 Beep OFF
+03226934521i[PIT81] Changing GATE 2 to: 0
+03228113775i[XGUI ] X11 Beep ON (frequency=749.96)
+03228113775i[PIT81] Changing GATE 2 to: 1
+03228574544i[XGUI ] X11 Beep OFF
+03228574544i[PIT81] Changing GATE 2 to: 0
+03247113580i[XGUI ] X11 Beep ON (frequency=749.96)
+03247113580i[PIT81] Changing GATE 2 to: 1
+03247574849i[XGUI ] X11 Beep OFF
+03247574849i[PIT81] Changing GATE 2 to: 0
+03248965945i[XGUI ] X11 Beep ON (frequency=749.96)
+03248965945i[PIT81] Changing GATE 2 to: 1
+03249414878i[XGUI ] X11 Beep OFF
+03249414878i[PIT81] Changing GATE 2 to: 0
+03250737778i[XGUI ] X11 Beep ON (frequency=749.96)
+03250737778i[PIT81] Changing GATE 2 to: 1
+03251214907i[XGUI ] X11 Beep OFF
+03251214907i[PIT81] Changing GATE 2 to: 0
+03252629709i[XGUI ] X11 Beep ON (frequency=749.96)
+03252629709i[PIT81] Changing GATE 2 to: 1
+03253094938i[XGUI ] X11 Beep OFF
+03253094938i[PIT81] Changing GATE 2 to: 0
+03267716619i[XGUI ] X11 Beep ON (frequency=749.96)
+03267716619i[PIT81] Changing GATE 2 to: 1
+03268175176i[XGUI ] X11 Beep OFF
+03268175176i[PIT81] Changing GATE 2 to: 0
+03269380389i[XGUI ] X11 Beep ON (frequency=749.96)
+03269380389i[PIT81] Changing GATE 2 to: 1
+03269855206i[XGUI ] X11 Beep OFF
+03269855206i[PIT81] Changing GATE 2 to: 0
+03369841824i[XGUI ] X11 Beep ON (frequency=749.96)
+03369841824i[PIT81] Changing GATE 2 to: 1
+03370296805i[XGUI ] X11 Beep OFF
+03370296805i[PIT81] Changing GATE 2 to: 0
+03372362166i[XGUI ] X11 Beep ON (frequency=749.96)
+03372362166i[PIT81] Changing GATE 2 to: 1
+03372816843i[XGUI ] X11 Beep OFF
+03372816843i[PIT81] Changing GATE 2 to: 0
+03374090228i[XGUI ] X11 Beep ON (frequency=749.96)
+03374090228i[PIT81] Changing GATE 2 to: 1
+03374536873i[XGUI ] X11 Beep OFF
+03374536873i[PIT81] Changing GATE 2 to: 0
+03375826265i[XGUI ] X11 Beep ON (frequency=749.96)
+03375826265i[PIT81] Changing GATE 2 to: 1
+03376296902i[XGUI ] X11 Beep OFF
+03376296902i[PIT81] Changing GATE 2 to: 0
+03383321722i[XGUI ] X11 Beep ON (frequency=749.96)
+03383321722i[PIT81] Changing GATE 2 to: 1
+03383777015i[XGUI ] X11 Beep OFF
+03383777015i[PIT81] Changing GATE 2 to: 0
+03651782508i[XGUI ] X11 Beep ON (frequency=749.96)
+03651782508i[PIT81] Changing GATE 2 to: 1
+03652261293i[XGUI ] X11 Beep OFF
+03652261293i[PIT81] Changing GATE 2 to: 0
+05482937700i[XGUI ] X11 Beep ON (frequency=749.96)
+05482937700i[PIT81] Changing GATE 2 to: 1
+05483410453i[XGUI ] X11 Beep OFF
+05483410453i[PIT81] Changing GATE 2 to: 0
+05485050175i[XGUI ] X11 Beep ON (frequency=749.96)
+05485050175i[PIT81] Changing GATE 2 to: 1
+05485490484i[XGUI ] X11 Beep OFF
+05485490484i[PIT81] Changing GATE 2 to: 0
+05486861928i[XGUI ] X11 Beep ON (frequency=749.96)
+05486861928i[PIT81] Changing GATE 2 to: 1
+05487330513i[XGUI ] X11 Beep OFF
+05487330513i[PIT81] Changing GATE 2 to: 0
+05508285743i[XGUI ] X11 Beep ON (frequency=749.96)
+05508285743i[PIT81] Changing GATE 2 to: 1
+05508730856i[XGUI ] X11 Beep OFF
+05508730856i[PIT81] Changing GATE 2 to: 0
+05510653777i[XGUI ] X11 Beep ON (frequency=749.96)
+05510653777i[PIT81] Changing GATE 2 to: 1
+05511130894i[XGUI ] X11 Beep OFF
+05511130894i[PIT81] Changing GATE 2 to: 0
+05926669934i[XGUI ] X11 Beep ON (frequency=749.96)
+05926669934i[PIT81] Changing GATE 2 to: 1
+05927137515i[XGUI ] X11 Beep OFF
+05927137515i[PIT81] Changing GATE 2 to: 0
+06031790439i[XGUI ] X11 Beep ON (frequency=749.96)
+06031790439i[PIT81] Changing GATE 2 to: 1
+06032259192i[XGUI ] X11 Beep OFF
+06032259192i[PIT81] Changing GATE 2 to: 0
+07324323755i[XGUI ] X11 Beep ON (frequency=749.96)
+07324323755i[PIT81] Changing GATE 2 to: 1
+07324799772i[XGUI ] X11 Beep OFF
+07324799772i[PIT81] Changing GATE 2 to: 0
+07327642612i[XGUI ] X11 Beep ON (frequency=749.96)
+07327642612i[PIT81] Changing GATE 2 to: 1
+07327644086i[XGUI ] X11 Beep ON (frequency=749.96)
+07328119823i[XGUI ] X11 Beep OFF
+07328119823i[PIT81] Changing GATE 2 to: 0
+07347890175i[XGUI ] X11 Beep ON (frequency=749.96)
+07347890175i[PIT81] Changing GATE 2 to: 1
+07348360148i[XGUI ] X11 Beep OFF
+07348360148i[PIT81] Changing GATE 2 to: 0
+07630467517i[XGUI ] X11 Beep ON (frequency=749.96)
+07630467517i[PIT81] Changing GATE 2 to: 1
+07630924650i[XGUI ] X11 Beep OFF
+07630924650i[PIT81] Changing GATE 2 to: 0
+08069025017i[XGUI ] X11 Beep ON (frequency=749.96)
+08069025017i[PIT81] Changing GATE 2 to: 1
+08069491634i[XGUI ] X11 Beep OFF
+08069491634i[PIT81] Changing GATE 2 to: 0
+08165580000e[XGUI ] xkeypress(): keysym ffeb unhandled!
+08168044000e[XGUI ] xkeypress(): keysym ffeb unhandled!
+08225332000e[XGUI ] xkeypress(): keysym ffeb unhandled!
+08228908000e[XGUI ] xkeypress(): keysym ffeb unhandled!
+08534413997i[XGUI ] X11 Beep ON (frequency=749.96)
+08534413997i[PIT81] Changing GATE 2 to: 1
+08534859042i[XGUI ] X11 Beep OFF
+08534859042i[PIT81] Changing GATE 2 to: 0
+08538210179i[XGUI ] X11 Beep ON (frequency=749.96)
+08538210179i[PIT81] Changing GATE 2 to: 1
+08538659100i[XGUI ] X11 Beep OFF
+08538659100i[PIT81] Changing GATE 2 to: 0
+08800520161i[XGUI ] X11 Beep ON (frequency=749.96)
+08800520161i[PIT81] Changing GATE 2 to: 1
+08800983282i[XGUI ] X11 Beep OFF
+08800983282i[PIT81] Changing GATE 2 to: 0
+08839522403i[XGUI ] X11 Beep ON (frequency=749.96)
+08839522403i[PIT81] Changing GATE 2 to: 1
+08839983900i[XGUI ] X11 Beep OFF
+08839983900i[PIT81] Changing GATE 2 to: 0
+08963663274i[XGUI ] X11 Beep ON (frequency=749.96)
+08963663274i[PIT81] Changing GATE 2 to: 1
+08964105875i[XGUI ] X11 Beep OFF
+08964105875i[PIT81] Changing GATE 2 to: 0
+09324758965i[XGUI ] X11 Beep ON (frequency=749.96)
+09324758965i[PIT81] Changing GATE 2 to: 1
+09325160885i[XGUI ] X11 Beep ON (frequency=749.96)
+09325160889i[XGUI ] X11 Beep ON (frequency=749.96)
+09325162580i[XGUI ] X11 Beep ON (frequency=749.96)
+09325252875i[XGUI ] X11 Beep ON (frequency=749.96)
+09325252879i[XGUI ] X11 Beep ON (frequency=749.96)
+09325254769i[XGUI ] X11 Beep ON (frequency=749.96)
+09325376824i[XGUI ] X11 Beep ON (frequency=749.96)
+09325376828i[XGUI ] X11 Beep ON (frequency=749.96)
+09325711635i[XGUI ] X11 Beep OFF
+09325711635i[PIT81] Changing GATE 2 to: 0
+09326270617i[XGUI ] X11 Beep ON (frequency=749.96)
+09326270617i[PIT81] Changing GATE 2 to: 1
+09326320824i[XGUI ] X11 Beep ON (frequency=749.96)
+09326320828i[XGUI ] X11 Beep ON (frequency=749.96)
+09326711651i[XGUI ] X11 Beep OFF
+09326711651i[PIT81] Changing GATE 2 to: 0
+09327583009i[XGUI ] X11 Beep ON (frequency=749.96)
+09327583009i[PIT81] Changing GATE 2 to: 1
+09327732875i[XGUI ] X11 Beep ON (frequency=749.96)
+09327732879i[XGUI ] X11 Beep ON (frequency=749.96)
+09327734756i[XGUI ] X11 Beep ON (frequency=749.96)
+09328132824i[XGUI ] X11 Beep ON (frequency=749.96)
+09328132828i[XGUI ] X11 Beep ON (frequency=749.96)
+09328191671i[XGUI ] X11 Beep OFF
+09328191671i[PIT81] Changing GATE 2 to: 0
+09328222723i[XGUI ] X11 Beep ON (frequency=749.96)
+09328222723i[PIT81] Changing GATE 2 to: 1
+09328671680i[XGUI ] X11 Beep OFF
+09328671680i[PIT81] Changing GATE 2 to: 0
+10069446652i[XGUI ] X11 Beep ON (frequency=749.96)
+10069446652i[PIT81] Changing GATE 2 to: 1
+10069452212i[XGUI ] X11 Beep ON (frequency=749.96)
+10069488912i[XGUI ] X11 Beep ON (frequency=749.96)
+10069492884i[XGUI ] X11 Beep ON (frequency=749.96)
+10069545498i[XGUI ] X11 Beep ON (frequency=749.96)
+10069546070i[XGUI ] X11 Beep ON (frequency=749.96)
+10069547855i[XGUI ] X11 Beep ON (frequency=749.96)
+10069548020i[XGUI ] X11 Beep ON (frequency=749.96)
+10069548596i[XGUI ] X11 Beep ON (frequency=749.96)
+10069549026i[XGUI ] X11 Beep ON (frequency=749.96)
+10069549196i[XGUI ] X11 Beep ON (frequency=749.96)
+10069549366i[XGUI ] X11 Beep ON (frequency=749.96)
+10069549536i[XGUI ] X11 Beep ON (frequency=749.96)
+10069549706i[XGUI ] X11 Beep ON (frequency=749.96)
+10069549876i[XGUI ] X11 Beep ON (frequency=749.96)
+10069550046i[XGUI ] X11 Beep ON (frequency=749.96)
+10069550216i[XGUI ] X11 Beep ON (frequency=749.96)
+10069550386i[XGUI ] X11 Beep ON (frequency=749.96)
+10069550556i[XGUI ] X11 Beep ON (frequency=749.96)
+10069675169i[XGUI ] X11 Beep ON (frequency=749.96)
+10069677866i[XGUI ] X11 Beep ON (frequency=749.96)
+10069682919i[XGUI ] X11 Beep ON (frequency=749.96)
+10069763624i[XGUI ] X11 Beep ON (frequency=749.96)
+10069764750i[XGUI ] X11 Beep ON (frequency=749.96)
+10069765311i[XGUI ] X11 Beep ON (frequency=749.96)
+10069820604i[XGUI ] X11 Beep ON (frequency=749.96)
+10069858323i[XGUI ] X11 Beep ON (frequency=749.96)
+10069905079i[XGUI ] X11 Beep ON (frequency=749.96)
+10069954899i[XGUI ] X11 Beep ON (frequency=749.96)
+10069958472i[XGUI ] X11 Beep ON (frequency=749.96)
+10069959266i[XGUI ] X11 Beep ON (frequency=749.96)
+10069959990i[XGUI ] X11 Beep ON (frequency=749.96)
+10069987225i[XGUI ] X11 Beep ON (frequency=749.96)
+10069987745i[XGUI ] X11 Beep ON (frequency=749.96)
+10070049372i[XGUI ] X11 Beep ON (frequency=749.96)
+10070088484i[XGUI ] X11 Beep ON (frequency=749.96)
+10070131640i[XGUI ] X11 Beep ON (frequency=749.96)
+10070217698i[XGUI ] X11 Beep ON (frequency=749.96)
+10070218694i[XGUI ] X11 Beep ON (frequency=749.96)
+10070219865i[XGUI ] X11 Beep ON (frequency=749.96)
+10070220824i[XGUI ] X11 Beep ON (frequency=749.96)
+10070220828i[XGUI ] X11 Beep ON (frequency=749.96)
+10070220938i[XGUI ] X11 Beep ON (frequency=749.96)
+10070223048i[XGUI ] X11 Beep ON (frequency=749.96)
+10070223914i[XGUI ] X11 Beep ON (frequency=749.96)
+10070264988i[XGUI ] X11 Beep ON (frequency=749.96)
+10070319485i[XGUI ] X11 Beep ON (frequency=749.96)
+10070407087i[XGUI ] X11 Beep ON (frequency=749.96)
+10070456478i[XGUI ] X11 Beep ON (frequency=749.96)
+10070459969i[XGUI ] X11 Beep ON (frequency=749.96)
+10070461128i[XGUI ] X11 Beep ON (frequency=749.96)
+10070462092i[XGUI ] X11 Beep ON (frequency=749.96)
+10070500501i[XGUI ] X11 Beep ON (frequency=749.96)
+10070542727i[XGUI ] X11 Beep ON (frequency=749.96)
+10070581957i[XGUI ] X11 Beep ON (frequency=749.96)
+10070948803i[XGUI ] X11 Beep ON (frequency=749.96)
+10070953075i[XGUI ] X11 Beep ON (frequency=749.96)
+10070953922i[XGUI ] X11 Beep ON (frequency=749.96)
+10070983821i[XGUI ] X11 Beep ON (frequency=749.96)
+10070984260i[XGUI ] X11 Beep ON (frequency=749.96)
+10070985107i[XGUI ] X11 Beep ON (frequency=749.96)
+10070987163i[XGUI ] X11 Beep ON (frequency=749.96)
+10070989395i[XGUI ] X11 Beep ON (frequency=749.96)
+10070990661i[XGUI ] X11 Beep ON (frequency=749.96)
+10070991100i[XGUI ] X11 Beep ON (frequency=749.96)
+10070992798i[XGUI ] X11 Beep ON (frequency=749.96)
+10070993662i[XGUI ] X11 Beep ON (frequency=749.96)
+10070994101i[XGUI ] X11 Beep ON (frequency=749.96)
+10070994540i[XGUI ] X11 Beep ON (frequency=749.96)
+10070996339i[XGUI ] X11 Beep ON (frequency=749.96)
+10070998824i[XGUI ] X11 Beep ON (frequency=749.96)
+10071027827i[XGUI ] X11 Beep ON (frequency=749.96)
+10071029088i[XGUI ] X11 Beep ON (frequency=749.96)
+10071030343i[XGUI ] X11 Beep ON (frequency=749.96)
+10071483508i[XGUI ] X11 Beep OFF
+10071483508i[PIT81] Changing GATE 2 to: 0
